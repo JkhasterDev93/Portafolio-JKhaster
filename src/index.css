@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-BBH: "BBH Bartle", sans-serif;
+    --font-Embed: "Big Shoulders", sans-serif;
+    --font-Momo: "Momo Trust Display", sans-serif;
+    --font-Darker: "Darker Grotesque", sans-serif;
+    --font-League: "League Gothic", sans-serif;
+}
+
+@layer base {
+    /* .title-primary {
+        @apply 
+    } */
+}
+
+body{
+    background-color: #111111;
+}
