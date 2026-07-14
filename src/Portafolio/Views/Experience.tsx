@@ -1,0 +1,50 @@
+import { useState } from "react";
+import { gridBoxExperience } from "../Data/Constantes"
+import { ModalForm } from "./ModalForm";
+
+const Experience = () => {
+    
+    const [isShowModalForm, setIsShowModalForm] = useState<boolean>(false);
+    const [idKey, setIdKey] = useState<number>(0);
+
+
+  return (
+    <>
+    {<section className='min-h-screen text-[#EAE7DF] px-18 py-12'>
+      <div className="grid grid-cols-12 grid-rows-10 gap-4 h-screen">
+        {gridBoxExperience.map(item=>(
+          <div className={`group flex flex-col ${item.class} rounded-3xl p-4 bg-center bg-cover`} style={{backgroundImage:`url(${item.showImage === 'S' ? item.src : ''})`}}>
+            {item.id === 1 ? <h1 className="font-Momo text-6xl mb-12">Experiencia</h1> : <></>}
+            <div className="flex flex-row justify-between">
+              <div className="">
+                <h3 className="font-League text-4xl">{item.bg}</h3>
+                <p className="font-Darker text-xl">{item.company}</p>
+              </div>
+              <button className="
+              w-16 h-16 
+              bg-[#D1E395] 
+              rounded-full 
+              flex 
+              justify-center 
+              items-center
+              opacity-0
+              scale
+              transition-all
+              duration-300
+              group-hover:opacity-100
+              group-hover: scale-100
+              cursor-pointer"
+              onClick={()=> {setIsShowModalForm(true), setIdKey(item.id)}}>
+                <img src="public/right.png" className="w-10"/>
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>}
+    {<ModalForm onOpen={isShowModalForm} onClose={()=>setIsShowModalForm(false)} idRefer={idKey}/>}
+  </>
+  )
+}
+
+export default Experience

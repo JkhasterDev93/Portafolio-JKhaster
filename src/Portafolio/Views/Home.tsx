@@ -4,7 +4,7 @@ const Home = () => {
       <div className="
       w-screen 
       h-screen 
-      bg-[url('public/homeImageBg.png')] 
+      bg-[url('public/homeDark.png')] 
       bg-cover 
       bg-center
       flex

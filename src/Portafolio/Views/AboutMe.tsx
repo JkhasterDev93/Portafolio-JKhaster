@@ -1,6 +1,19 @@
+import { AboutMeText, IconsButtons, IconsIntagram, ListLanguage, ListSoftSkills } from "../Data/Constantes";
+
 const AboutMe = () => {
+
+const downloadPDF = () => {
+  const link = document.createElement("a");
+  link.href = "/CV-Jaime-Mgarcia-Act-2026.pdf";
+  link.download = "CV-Jaime-Mgarcia-Act-2026.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+
   return (
-    <section className="min-h-screen bg-[#141414] text-[#EAE7DF] px-18 py-12">
+    <section className="min-h-screen text-[#EAE7DF] px-18 py-12">
       {/* Título */}
       <h1 className="font-Momo text-6xl mb-12">Sobre Mí</h1>
 
@@ -9,24 +22,10 @@ const AboutMe = () => {
         {/* =================== COLUMNA IZQUIERDA =================== */}
 
         <div className="flex flex-col justify-between">
-          <div className="flex flex-col gap-10 font-Darker text-lg leading-8 text-[#B9B9B9]">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since 1966, when designers at Letraset and James Mosley, the
-              librarian at St Bride Printing Library in London, took a 1914
-              Cicero translation and scrambled it to make dummy text for
-              Letraset's Body Type sheets.
-            </p>
-
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since 1966, when designers at Letraset and James Mosley, the
-              librarian at St Bride Printing Library in London, took a 1914
-              Cicero translation and scrambled it to make dummy text for
-              Letraset's Body Type sheets.
-            </p>
+          <div className="flex flex-col gap-10 font-Darker text-lg leading-8 text-[#B9B9B9] text-[18px]">
+            {AboutMeText.map(item=>(
+              <p key={item.name}>{item.text}</p>
+            ))}
           </div>
         </div>
 
@@ -35,48 +34,68 @@ const AboutMe = () => {
         <div className="flex flex-col gap-6">
           {/* Habilidades */}
 
-          <div className="bg-[#2A2926] rounded-3xl p-7">
+          <div className="bg-[#2A2926] rounded-3xl p-7 text-[#F4E8C5]">
             <h2 className="font-League text-4xl mb-5">Habilidades Blandas</h2>
 
-            <ul className="list-disc pl-5 space-y-2 font-Darker text-[#B9B9B9]">
-              <li>Trabajo en equipo</li>
-
-              <li>Comunicación efectiva</li>
-
-              <li>Resolución de problemas</li>
-
-              <li>Aprendizaje continuo</li>
+            <ul className="list-disc pl-5 space-y-2 font-Darker text-[#B9B9B9] text-[18px]">
+              {ListSoftSkills.map(item=>(
+                <li key={item.name}>{item.text}</li>
+              ))}
             </ul>
           </div>
 
           {/* Idiomas */}
 
-          <div className="bg-[#2A2926] rounded-3xl p-7">
+          <div className="bg-[#2A2926] rounded-3xl p-7 text-[#F4E8C5]">
             <h2 className="font-League text-4xl mb-5">Idiomas</h2>
 
-            <ul className="list-disc pl-5 space-y-2 font-Darker text-[#B9B9B9]">
-              <li>Español (Nativo)</li>
-
-              <li>Inglés (Intermedio)</li>
+            <ul className="list-disc pl-5 space-y-2 font-Darker text-[#B9B9B9] text-[18px]">
+              {ListLanguage.map(item=>(
+                <li key={item.name}>{item.text}</li>
+              ))}
             </ul>
           </div>
 
           {/* Contacto */}
 
           <div>
-            <h2 className="font-League text-4xl mb-6">Contacto</h2>
+            <h2 className="font-League text-4xl mb-6 text-[#F4E8C5]">Contacto & Redes Sociales</h2>
 
-            <div className="flex gap-6 text-3xl">
-              <span>0</span>
-
-              <span>1</span>
-
-              <span>2</span>
-
-              <span>3</span>
-
-              <span>4</span>
-            </div>
+						<div className="flex gap-10">
+							{IconsButtons.map(item=>(
+                <div className="relative group transition-transform">
+                  <a 
+                  key={item.name} 
+                  onClick={
+                    item.name !== 'Curriculum' ? () => window.open(item.url, "_blank") : downloadPDF
+                  }
+                  >
+                    <item.icon className="w-6 h-6 text-amber-50 cursor-pointer hover:scale-140 transition-transform" />
+                  </a>
+                <span
+                  className="
+                    absolute
+                    left-1/2
+                    -translate-x-1/2
+                    top-full
+                    mt-4
+                    px-2
+                    py-1
+                    rounded-2xl
+                    bg-[#65A106]
+                    text-white
+                    text-xs
+                    whitespace-nowrap
+                    opacity-0
+                    group-hover:opacity-100
+                    transition-opacity
+                  "
+                >
+                  {item.tooltip}
+                </span>
+                </div>                
+              ))}
+						</div>
           </div>
         </div>
 
@@ -89,11 +108,15 @@ const AboutMe = () => {
               alt="Perfil"
               className="w-full h-105 object-cover p-3 rounded-4xl"
             />
-
-            <div className="p-6">
-              <h3 className="font-semibold text-lg">Jaime Maldonado García</h3>
-
-              <p className="text-sm text-[#B9B9B9] mt-2">
+            <div className="pl-4 pb-4">
+              <div className="flex flex-row gap-3">
+                {IconsIntagram.map(item => (
+                  <item.icon className={'w-7 h-7 text-amber-50'}/>
+                ))}
+              </div>
+              
+              <h3 className="font-Darker font-bold text-lg text-[#F4E8C5]">Jaime Maldonado García</h3>
+              <p className="font-Darker text-sm text-[#B9B9B9]">
                 Soy un apasionado por el desarrollo y el diseño.
               </p>
             </div>
