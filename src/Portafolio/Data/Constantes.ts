@@ -99,6 +99,138 @@ export const gridBoxExperience: gridBoxExp[] = [
 
 export const expDetalleModal:ExpDetail[] = [
     {
+        id: 1, 
+        title: 'Freelancer Diseñador de Flayers',
+        pagraph: [
+            {
+                subtitle: null,
+                text: `Lorem Ipsum is simply dummy text of the 
+                printing and typesetting industry. Lorem Ipsum 
+                has been the industry's standard dummy text ever 
+                since 1966, when designers at Letraset and James 
+                Mosley, the librarian at St Bride Printing Library 
+                in London, took a 1914 Cicero translation and 
+                scrambled it to make dummy text for Letraset's Body 
+                Type sheets.`
+            },
+            {
+                subtitle: 'Proceso Creativo',
+                text: `It is a long established fact that a reader 
+                will be distracted by the readable content of a page 
+                when looking at its layout. The point of using Lorem 
+                Ipsum is that it has a more-or-less normal distribution 
+                of letters, as opposed to using 'Content here, content here', 
+                making it look like readable English.`,
+            }
+        ],
+        render: [
+            {
+                id:'img01',
+                src: '/public/ImagesExp/Codex/image01.jpg'
+            },
+            {
+                id:'img02',
+                src: '/public/ImagesExp/Codex/image02.jpg'
+            },
+            {
+                id:'img03',
+                src: '/public/ImagesExp/Codex/image03.jpeg'
+            },
+            {
+                id:'img04',
+                src: '/public/ImagesExp/Codex/image04.jpg'
+            },
+        ]
+    },
+    {
+        id: 2, 
+        title: 'Freelancer Diseñador de Flayers',
+        pagraph: [
+            {
+                subtitle: null,
+                text: `Lorem Ipsum is simply dummy text of the 
+                printing and typesetting industry. Lorem Ipsum 
+                has been the industry's standard dummy text ever 
+                since 1966, when designers at Letraset and James 
+                Mosley, the librarian at St Bride Printing Library 
+                in London, took a 1914 Cicero translation and 
+                scrambled it to make dummy text for Letraset's Body 
+                Type sheets.`
+            },
+            {
+                subtitle: 'Proceso Creativo',
+                text: `It is a long established fact that a reader 
+                will be distracted by the readable content of a page 
+                when looking at its layout. The point of using Lorem 
+                Ipsum is that it has a more-or-less normal distribution 
+                of letters, as opposed to using 'Content here, content here', 
+                making it look like readable English.`,
+            }
+        ],
+        render: [
+            {
+                id:'img01',
+                src: '/public/ImagesExp/Codice/image01.jpg'
+            },
+            {
+                id:'img02',
+                src: '/public/ImagesExp/Codice/image02.jpg'
+            },
+            {
+                id:'img03',
+                src: '/public/ImagesExp/Codice/image03.jpeg'
+            },
+            {
+                id:'img04',
+                src: '/public/ImagesExp/Codice/image04.jpg'
+            },
+        ]
+    },
+    {
+        id: 3, 
+        title: 'Freelancer Diseñador de Flayers',
+        pagraph: [
+            {
+                subtitle: null,
+                text: `Lorem Ipsum is simply dummy text of the 
+                printing and typesetting industry. Lorem Ipsum 
+                has been the industry's standard dummy text ever 
+                since 1966, when designers at Letraset and James 
+                Mosley, the librarian at St Bride Printing Library 
+                in London, took a 1914 Cicero translation and 
+                scrambled it to make dummy text for Letraset's Body 
+                Type sheets.`
+            },
+            {
+                subtitle: 'Proceso Creativo',
+                text: `It is a long established fact that a reader 
+                will be distracted by the readable content of a page 
+                when looking at its layout. The point of using Lorem 
+                Ipsum is that it has a more-or-less normal distribution 
+                of letters, as opposed to using 'Content here, content here', 
+                making it look like readable English.`,
+            }
+        ],
+        render: [
+            {
+                id:'img01',
+                src: '/public/ImagesExp/MTI/image01.jpg'
+            },
+            {
+                id:'img02',
+                src: '/public/ImagesExp/MTI/image02.jpg'
+            },
+            {
+                id:'img03',
+                src: '/public/ImagesExp/MTI/image03.jpeg'
+            },
+            {
+                id:'img04',
+                src: '/public/ImagesExp/MTI/image04.jpg'
+            },
+        ]
+    },
+    {
         id: 4, 
         title: 'Freelancer Diseñador de Flayers',
         pagraph: [
@@ -139,6 +271,94 @@ export const expDetalleModal:ExpDetail[] = [
             {
                 id:'img04',
                 src: '/public/ImagesExp/Flayers/image04.png'
+            },
+        ]
+    },
+    {
+        id: 5, 
+        title: 'Freelancer Diseñador de Flayers',
+        pagraph: [
+            {
+                subtitle: null,
+                text: `Lorem Ipsum is simply dummy text of the 
+                printing and typesetting industry. Lorem Ipsum 
+                has been the industry's standard dummy text ever 
+                since 1966, when designers at Letraset and James 
+                Mosley, the librarian at St Bride Printing Library 
+                in London, took a 1914 Cicero translation and 
+                scrambled it to make dummy text for Letraset's Body 
+                Type sheets.`
+            },
+            {
+                subtitle: 'Proceso Creativo',
+                text: `It is a long established fact that a reader 
+                will be distracted by the readable content of a page 
+                when looking at its layout. The point of using Lorem 
+                Ipsum is that it has a more-or-less normal distribution 
+                of letters, as opposed to using 'Content here, content here', 
+                making it look like readable English.`,
+            }
+        ],
+        render: [
+            {
+                id:'img01',
+                src: '/public/ImagesExp/Codbridge/image01.png'
+            },
+            {
+                id:'img02',
+                src: '/public/ImagesExp/Codbridge/image02.png'
+            },
+            {
+                id:'img03',
+                src: '/public/ImagesExp/Codbridge/image03.png'
+            },
+            {
+                id:'img04',
+                src: '/public/ImagesExp/Codbridge/image04.png'
+            },
+        ]
+    },
+    {
+        id: 6, 
+        title: 'Freelancer Diseñador de Flayers',
+        pagraph: [
+            {
+                subtitle: null,
+                text: `Lorem Ipsum is simply dummy text of the 
+                printing and typesetting industry. Lorem Ipsum 
+                has been the industry's standard dummy text ever 
+                since 1966, when designers at Letraset and James 
+                Mosley, the librarian at St Bride Printing Library 
+                in London, took a 1914 Cicero translation and 
+                scrambled it to make dummy text for Letraset's Body 
+                Type sheets.`
+            },
+            {
+                subtitle: 'Proceso Creativo',
+                text: `It is a long established fact that a reader 
+                will be distracted by the readable content of a page 
+                when looking at its layout. The point of using Lorem 
+                Ipsum is that it has a more-or-less normal distribution 
+                of letters, as opposed to using 'Content here, content here', 
+                making it look like readable English.`,
+            }
+        ],
+        render: [
+            {
+                id:'img01',
+                src: '/public/ImagesExp/VideoGame/image01.png'
+            },
+            {
+                id:'img02',
+                src: '/public/ImagesExp/VideoGame/image02.png'
+            },
+            {
+                id:'img03',
+                src: '/public/ImagesExp/VideoGame/image03.png'
+            },
+            {
+                id:'img04',
+                src: '/public/ImagesExp/VideoGame/image04.png'
             },
         ]
     },
