@@ -1,10 +1,14 @@
 import { AboutMeText, IconsButtons, IconsIntagram, ListLanguage, ListSoftSkills } from "../Data/Constantes";
+import archivePDF from '../../assets/pdf/CV-Jaime-Mgarcia-Act-2026.pdf';
+import photoPorfile from '../../assets/Banners/photo01.jpeg'
 
 const AboutMe = () => {
 
+  
+
 const downloadPDF = () => {
   const link = document.createElement("a");
-  link.href = "/CV-Jaime-Mgarcia-Act-2026.pdf";
+  link.href = archivePDF;
   link.download = "CV-Jaime-Mgarcia-Act-2026.pdf";
   document.body.appendChild(link);
   link.click();
@@ -104,7 +108,7 @@ const downloadPDF = () => {
         <div>
           <div className="bg-[#242421] rounded-3xl overflow-hidden">
             <img
-              src="public/photo01.jpeg"
+              src={photoPorfile}
               alt="Perfil"
               className="w-full h-105 object-cover p-3 rounded-4xl"
             />

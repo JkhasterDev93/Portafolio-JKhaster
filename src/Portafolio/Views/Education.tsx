@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 import { ListEducation, ListStacks } from "../Data/Constantes"
+import { courseIcon } from "../../assets/ShortImages";
+import mainImageEdu from '../../assets/Banners/photoEdu01.jpeg'
 
 export const Education = () => {
 
@@ -36,7 +38,7 @@ export const Education = () => {
             pb-2
             pl-4
             "
-            style={{ backgroundImage: "url('public/photoEdu01.jpeg')" }}
+            style={{ backgroundImage: `url(${mainImageEdu})`}}
             >
                 <h5 className="font-Momo text-[#F4E8C5]">{ListEducation.main.time}</h5>
                 <h2 className="font-League text-5xl text-[#F4E8C5]">{ListEducation.main.course}</h2>
@@ -64,7 +66,7 @@ export const Education = () => {
                       :
                       <div 
                       className="col-span-2 row-span-3 bg-center bg-cover rounded-2xl flex"
-                      style={{ backgroundImage: "url('public/ShortImages/course01.jpg')" }}></div>
+                      style={{ backgroundImage: `url(${courseIcon})`}}></div>
                       }
                       <div className="col-span-5 row-span-3 col-start-3 flex flex-col">
                         <p className="font-League  text-xl text-[#F4E8C5]">{item.school}</p>

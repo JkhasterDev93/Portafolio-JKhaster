@@ -1,13 +1,7 @@
 import type { ExpDetail, gridBoxExp, icon_button, listStack, listViewer, textGeneral } from "../Interfaces/Interface";
-import Curriculum from '../../assets/icons/document.svg?react';
-import GitHub from '../../assets/icons/github.svg?react';
-import Linkedin from '../../assets/icons/linkedin.svg?react';
-import Pinterest from '../../assets/icons/pinterest.svg?react';
-import X from '../../assets/icons/twitter-alt-circle.svg?react';
-import WhatsApp from '../../assets/icons/whatsapp.svg?react';
-import Like from '../../assets/icons/like.svg?react';
-import Comentar from '../../assets/icons/comment.svg?react';
-import Compartir from '../../assets/icons/share.svg?react';
+import {cssIcon, figmaIcon, githubIcon, gitIcon, htmlIcon, javaIcon, nextIcon, notioIcon, photoIcon, postmanIcon, pythonIcon, reactIcon, seleniumIcon, sqlIcon, tailIcon, typeIcon} from '../../assets/ShortImages/index';
+import { Comentar, Compartir, Curriculum, GitHub, Like, Linkedin, Pinterest, WhatsApp, X } from "../../assets/icons";
+
 
 export const IconsButtons:icon_button[]  = [
     {name: 'Linkedin', tooltip: 'Ir a Linkedin', icon: Linkedin, url: 'https://www.linkedin.com/in/jaimemgarcia093/'},
@@ -69,22 +63,22 @@ export const ListEducation:listViewer = {
 }
 
 export const ListStacks:listStack[] = [
-    {name: 'react', label: 'React', icon: '/public/ShortImages/react.png'},
-    {name: 'type', label: 'TypeScript', icon: '/public/ShortImages/typescript.png'},
-    {name: 'git', label: 'Git', icon: '/public/ShortImages/gitlab.png'},
-    {name: 'github', label: 'GitHub', icon: '/public/ShortImages/github.png'},
-    {name: 'html', label: 'HTML', icon: '/public/ShortImages/html.png'},
-    {name: 'css', label: 'CSS', icon: '/public/ShortImages/css-3.png'},
-    {name: 'tail', label: 'Tailwind', icon: '/public/ShortImages/tailwind.png'},
-    {name: 'java', label: 'Java', icon: '/public/ShortImages/java.png'},
-    {name: 'python', label: 'Python', icon: '/public/ShortImages/python.png'},
-    {name: 'selenium', label: 'Selenium', icon: '/public/ShortImages/selenium.png'},
-    {name: 'postman', label: 'Postman', icon: '/public/ShortImages/postman.png'},
-    {name: 'sql', label: 'MySql', icon: '/public/ShortImages/sql.png'},
-    {name: 'figma', label: 'Figma', icon: '/public/ShortImages/figma.png'},
-    {name: 'photo', label: 'Photoshop', icon: '/public/ShortImages/photoshop.png'},
-    {name: 'notion', label: 'Notion', icon: '/public/ShortImages/notion.png'},
-    {name: 'next', label: 'Next.js', icon: '/public/ShortImages/next.png'},
+    {name: 'react', label: 'React', icon: reactIcon},
+    {name: 'type', label: 'TypeScript', icon: typeIcon},
+    {name: 'git', label: 'Git', icon: gitIcon},
+    {name: 'github', label: 'GitHub', icon: githubIcon},
+    {name: 'html', label: 'HTML', icon: htmlIcon},
+    {name: 'css', label: 'CSS', icon: cssIcon},
+    {name: 'tail', label: 'Tailwind', icon: tailIcon},
+    {name: 'java', label: 'Java', icon: javaIcon},
+    {name: 'python', label: 'Python', icon: pythonIcon},
+    {name: 'selenium', label: 'Selenium', icon: seleniumIcon},
+    {name: 'postman', label: 'Postman', icon: postmanIcon},
+    {name: 'sql', label: 'MySql', icon: sqlIcon},
+    {name: 'figma', label: 'Figma', icon: figmaIcon},
+    {name: 'photo', label: 'Photoshop', icon: photoIcon},
+    {name: 'notion', label: 'Notion', icon: notioIcon},
+    {name: 'next', label: 'Next.js', icon: nextIcon},
 ]
 
 export const gridBoxExperience: gridBoxExp[] = [
