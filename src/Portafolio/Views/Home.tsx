@@ -17,7 +17,7 @@ const Home = () => {
       style={{backgroundImage: `url(${bannerHome})`}}
       >
         <h5 className="font-BBH text-[#FFFFFF]">Jaime Maldonado Garcia</h5>
-        <p className="font-Embed text-[#FFFFFF]">Desarrollador Jr. FrontEnd  |  Q.A.  |  Diseñador</p>
+        <p className="font-Embed text-[#FFFFFF]">Desarrollador Jr. FrontEnd & Q.A. </p>
       </div>
     </div>
   )

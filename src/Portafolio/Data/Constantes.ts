@@ -1,6 +1,8 @@
 import type { ExpDetail, gridBoxExp, icon_button, listStack, listViewer, textGeneral } from "../Interfaces/Interface";
 import {cssIcon, figmaIcon, githubIcon, gitIcon, htmlIcon, javaIcon, nextIcon, notioIcon, photoIcon, postmanIcon, pythonIcon, reactIcon, seleniumIcon, sqlIcon, tailIcon, typeIcon} from '../../assets/ShortImages/index';
 import { Comentar, Compartir, Curriculum, GitHub, Like, Linkedin, Pinterest, WhatsApp, X } from "../../assets/icons";
+import { cobridge01, cobridge02, cobridge03, cobridge04, codex01, codex02, codex03, codex04, codice01, codice02, codice03, codice04, flayer01, flayer02, flayer03, flayer04, mti01, mti02, mti03, mti04, titu01, titu02, titu03, titu04 } from "../../assets/ImagesExp";
+import { box01, box02, box03, box04 } from "../../assets/Banners";
 
 
 export const IconsButtons:icon_button[]  = [
@@ -82,12 +84,12 @@ export const ListStacks:listStack[] = [
 ]
 
 export const gridBoxExperience: gridBoxExp[] = [
-    {id: 1, showImage: 'S', src:'public/boxphoto01.jpg', class: 'col-span-8 row-span-5 justify-between shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Desarrollador Front End Jr.', company: 'CodexTec 2026'},
-    {id: 2, showImage: 'S', src:'public/boxphoto02.jpg', class: 'col-span-4 row-span-6 col-start-9 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'QA Tester', company: 'Códice Global 2024'},
-    {id: 3, showImage: 'S', src:'public/boxphoto03.jpg', class: 'col-span-3 row-span-5 row-start-6 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Tester Funcional', company: 'MTI Consultoría 2024'},
+    {id: 1, showImage: 'S', src: box01, class: 'col-span-8 row-span-5 justify-between shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Desarrollador Front End Jr.', company: 'CodexTec 2026'},
+    {id: 2, showImage: 'S', src: box02, class: 'col-span-4 row-span-6 col-start-9 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'QA Tester', company: 'Códice Global 2024'},
+    {id: 3, showImage: 'S', src: box03, class: 'col-span-3 row-span-5 row-start-6 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Tester Funcional', company: 'MTI Consultoría 2024'},
     {id: 4, showImage: 'N', src:'', class: 'col-span-5 row-span-2 col-start-4 row-start-6 justify-end bg-[#578014]',bg: 'Diseñador de Flayers', company: 'Freelance 2026'},
     {id: 5, showImage: 'N', src:'', class: 'col-span-5 row-span-3 col-start-4 row-start-8 justify-end bg-[#578014]',bg: 'Programador Front End', company: 'Universidad Autónoma de Querétaro'},
-    {id: 6, showImage: 'S', src:'public/boxphoto04.png', class: 'col-span-4 row-span-4 col-start-9 row-start-7 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Artista Visual en Videojuego', company: 'Universidad Autónoma de Querétaro'},
+    {id: 6, showImage: 'S', src: box04, class: 'col-span-4 row-span-4 col-start-9 row-start-7 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Artista Visual en Videojuego', company: 'Universidad Autónoma de Querétaro'},
 ]
 
 
@@ -120,19 +122,19 @@ export const expDetalleModal:ExpDetail[] = [
         render: [
             {
                 id:'img01',
-                src: '/public/ImagesExp/Codex/image01.jpg'
+                src: codex01
             },
             {
                 id:'img02',
-                src: '/public/ImagesExp/Codex/image02.jpg'
+                src: codex02
             },
             {
                 id:'img03',
-                src: '/public/ImagesExp/Codex/image03.jpeg'
+                src: codex03
             },
             {
                 id:'img04',
-                src: '/public/ImagesExp/Codex/image04.jpg'
+                src: codex04
             },
         ]
     },
@@ -164,19 +166,19 @@ export const expDetalleModal:ExpDetail[] = [
         render: [
             {
                 id:'img01',
-                src: '/public/ImagesExp/Codice/image01.jpg'
+                src: codice01
             },
             {
                 id:'img02',
-                src: '/public/ImagesExp/Codice/image02.jpg'
+                src: codice02
             },
             {
                 id:'img03',
-                src: '/public/ImagesExp/Codice/image03.jpeg'
+                src: codice03
             },
             {
                 id:'img04',
-                src: '/public/ImagesExp/Codice/image04.jpg'
+                src: codice04
             },
         ]
     },
@@ -208,19 +210,19 @@ export const expDetalleModal:ExpDetail[] = [
         render: [
             {
                 id:'img01',
-                src: '/public/ImagesExp/MTI/image01.jpg'
+                src: mti01
             },
             {
                 id:'img02',
-                src: '/public/ImagesExp/MTI/image02.jpg'
+                src: mti02
             },
             {
                 id:'img03',
-                src: '/public/ImagesExp/MTI/image03.jpeg'
+                src: mti03
             },
             {
                 id:'img04',
-                src: '/public/ImagesExp/MTI/image04.jpg'
+                src: mti04
             },
         ]
     },
@@ -252,19 +254,19 @@ export const expDetalleModal:ExpDetail[] = [
         render: [
             {
                 id:'img01',
-                src: '/public/ImagesExp/Flayers/image01.png'
+                src: flayer01
             },
             {
                 id:'img02',
-                src: '/public/ImagesExp/Flayers/image02.png'
+                src: flayer02
             },
             {
                 id:'img03',
-                src: '/public/ImagesExp/Flayers/image03.png'
+                src: flayer03
             },
             {
                 id:'img04',
-                src: '/public/ImagesExp/Flayers/image04.png'
+                src: flayer04
             },
         ]
     },
@@ -296,19 +298,19 @@ export const expDetalleModal:ExpDetail[] = [
         render: [
             {
                 id:'img01',
-                src: '/public/ImagesExp/Codbridge/image01.png'
+                src: cobridge01
             },
             {
                 id:'img02',
-                src: '/public/ImagesExp/Codbridge/image02.png'
+                src: cobridge02
             },
             {
                 id:'img03',
-                src: '/public/ImagesExp/Codbridge/image03.png'
+                src: cobridge03
             },
             {
                 id:'img04',
-                src: '/public/ImagesExp/Codbridge/image04.png'
+                src: cobridge04
             },
         ]
     },
@@ -340,19 +342,19 @@ export const expDetalleModal:ExpDetail[] = [
         render: [
             {
                 id:'img01',
-                src: '/public/ImagesExp/VideoGame/image01.png'
+                src: titu01
             },
             {
                 id:'img02',
-                src: '/public/ImagesExp/VideoGame/image02.png'
+                src: titu02
             },
             {
                 id:'img03',
-                src: '/public/ImagesExp/VideoGame/image03.png'
+                src: titu03
             },
             {
                 id:'img04',
-                src: '/public/ImagesExp/VideoGame/image04.png'
+                src: titu04
             },
         ]
     },

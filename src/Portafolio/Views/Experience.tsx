@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { gridBoxExperience } from "../Data/Constantes"
 import { ModalForm } from "./ModalForm";
+import iconOpenModal from '../../assets/icons/right.png'
 
 const Experience = () => {
     
@@ -35,7 +36,7 @@ const Experience = () => {
               group-hover: scale-100
               cursor-pointer"
               onClick={()=> {setIsShowModalForm(true), setIdKey(item.id)}}>
-                <img src="public/right.png" className="w-10"/>
+                <img src={iconOpenModal}/>
               </button>
             </div>
           </div>
