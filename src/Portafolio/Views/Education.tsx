@@ -21,13 +21,11 @@ export const Education = () => {
   },[])
 
   return (
-    <section className='min-h-screen px-18 py-12 text-[#EAE7DF]'>
-        <h1 className='font-Momo text-6xl mb-12'>Educación</h1>
-        <div className="grid grid-cols-5 grid-rows-10 gap-4 h-160 overflow-hidden">
+    <section className='min-h-screen px-8 py-12 text-[#EAE7DF]'>
+        <h1 className='font-Momo text-4xl mb-8'>Educación</h1>
+        <div className="flex flex-col gap-4 overflow-hidden">
             <div 
             className="
-            col-span-3 
-            row-span-7 
             bg-cover 
             bg-center 
             rounded-3xl
@@ -37,16 +35,17 @@ export const Education = () => {
             justify-end
             pb-2
             pl-4
+            h-80
             "
             style={{ backgroundImage: `url(${mainImageEdu})`}}
             >
                 <h5 className="font-Momo text-[#F4E8C5]">{ListEducation.main.time}</h5>
-                <h2 className="font-League text-5xl text-[#F4E8C5]">{ListEducation.main.course}</h2>
-                <p className="font-Darker text-2xl">{ListEducation.main.school}</p>
+                <h2 className="font-League text-4xl text-[#F4E8C5]">{ListEducation.main.course}</h2>
+                <p className="font-Darker text-[14px]">{ListEducation.main.school}</p>
             </div>
             <div className="col-span-2 row-span-7 col-start-4 flex flex-col gap-4">
               <div className="w-full h-10 flex items-center">
-                <h3 className="font-Momo text-2xl">Cursos y Certificaciones</h3>
+                <h3 className="font-Momo text-xl">Cursos y Certificaciones</h3>
               </div>
               <div className="w-full h-100 p-2 flex overflow-y-auto no-scrollbar">
                 <div className="w-full h-full flex flex-col gap-2">
@@ -59,25 +58,27 @@ export const Education = () => {
                       bg-center bg-cover rounded-2xl flex 
                       items-center justify-center
                       border-2 border-dashed 
-                      border-[#81FB1D]"
+                      border-[#81FB1D]
+                      h-18
+                      "
                       >
-                        <span className="font-Momo text-[#81FB1D]">{item.porcent}</span>
+                        <span className="font-Momo text-[#81FB1D] text-[12px]">{item.porcent}</span>
                       </div>
                       :
                       <div 
-                      className="col-span-2 row-span-3 bg-center bg-cover rounded-2xl flex"
+                      className="col-span-2 row-span-3 bg-center bg-cover rounded-2xl flex h-18"
                       style={{ backgroundImage: `url(${courseIcon})`}}></div>
                       }
                       <div className="col-span-5 row-span-3 col-start-3 flex flex-col">
-                        <p className="font-League  text-xl text-[#F4E8C5]">{item.school}</p>
+                        <p className="font-League  text-xl text-[#F4E8C5] text-[18px]">{item.school}</p>
                         <p className="font-Darker text-[14px]">{item.description}</p>
-                        <p className="font-Momo text-[#F4E8C5]">{item.time}</p>
+                        <p className="font-Momo text-[#F4E8C5] text-[12px]">{item.time}</p>
                       </div>
                       <div className="col-span-3 col-start-8 row-start-2">
                         {item.end === 'N' ? 
                         <></>
                         :
-                        <button className="text-[#F0FB1D] text-sm w-full h-8 border border-[#F0FB1D] rounded-xl cursor-pointer" onClick={() => window.open(item.url, "_blank")}>
+                        <button className="text-[#F0FB1D] text-sm w-24 h-8 border border-[#F0FB1D] rounded-xl cursor-pointer text-[10px]" onClick={() => window.open(item.url, "_blank")}>
                           Ver Certificado
                         </button>
                         }
@@ -88,13 +89,13 @@ export const Education = () => {
               </div>
             </div>
             <div className="col-span-5 row-span-3 row-start-8 p-2">
-              <h3 className="font-Momo text-2xl">Herramientas de desarrollo, diseño y gestión</h3>
+              <h3 className="font-Momo text-xl">Herramientas de desarrollo, diseño y gestión</h3>
               <div className="w-full p-4 flex overflow-x-auto no-scrollbar" ref={scrollRef}>
                 <div className="flex flex-row gap-6 w-max">
                   {stacks.map((item,index)=>(
-                    <div key={`${item.name} - ${index}`} className="w-25 h-25 bg-[#242421] rounded-2xl flex flex-col justify-center items-center">
-                      <img className="w-10 h-10" src={`${item.icon}`}/>
-                      <span className="font-Darker text-xl">{item.label}</span>
+                    <div key={`${item.name} - ${index}`} className="w-20 h-20 bg-[#242421] rounded-2xl flex flex-col justify-center items-center">
+                      <img className="w-8 h-8" src={`${item.icon}`}/>
+                      <span className="font-Darker text-[14px]">{item.label}</span>
                     </div>
                   ))}
                 </div>
