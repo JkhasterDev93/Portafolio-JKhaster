@@ -5,7 +5,7 @@ import Home from "./Portafolio/Views/Home"
 
 const App = () => {
   return (
-    <main className="w-screen h-screen">
+    <main>
     {<Home/>}
 
     </main>      
