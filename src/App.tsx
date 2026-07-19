@@ -1,6 +1,6 @@
 import AboutMe from "./Portafolio/Views/AboutMe"
 import { Education } from "./Portafolio/Views/Education"
-// import Experience from "./Portafolio/Views/Experience"
+import Experience from "./Portafolio/Views/Experience"
 import Home from "./Portafolio/Views/Home"
 
 const App = () => {
@@ -9,14 +9,9 @@ const App = () => {
     {<Home/>}
     {<AboutMe/>}
     {<Education />}
+    {<Experience />}
     </main>
   )
 }
 
 export default App
-
-
-/*
-    {<Experience />}
-
-*/

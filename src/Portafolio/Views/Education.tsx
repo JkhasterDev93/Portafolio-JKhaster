@@ -23,7 +23,7 @@ export const Education = () => {
   return (
     <section className='min-h-screen px-8 py-12 text-[#EAE7DF]'>
         <h1 className='font-Momo text-4xl mb-8'>Educación</h1>
-        <div className="flex flex-col gap-4 overflow-hidden">
+        <div className="flex flex-col gap-4 lg:grid lg:grid-cols-5 lg:grid-rows-10 lg:h-160 overflow-hidden">
             <div 
             className="
             bg-cover 
@@ -36,21 +36,24 @@ export const Education = () => {
             pb-2
             pl-4
             h-80
+            lg:col-span-3
+            lg:row-span-7
+            lg:h-full
             "
             style={{ backgroundImage: `url(${mainImageEdu})`}}
             >
-                <h5 className="font-Momo text-[#F4E8C5]">{ListEducation.main.time}</h5>
-                <h2 className="font-League text-4xl text-[#F4E8C5]">{ListEducation.main.course}</h2>
-                <p className="font-Darker text-[14px]">{ListEducation.main.school}</p>
+                <h5 className="font-Momo text-[#F4E8C5] lg:text-[18px]">{ListEducation.main.time}</h5>
+                <h2 className="font-League text-4xl text-[#F4E8C5] lg:text-5xl">{ListEducation.main.course}</h2>
+                <p className="font-Darker text-[14px] lg:text-[22px]">{ListEducation.main.school}</p>
             </div>
             <div className="col-span-2 row-span-7 col-start-4 flex flex-col gap-4">
               <div className="w-full h-10 flex items-center">
-                <h3 className="font-Momo text-xl">Cursos y Certificaciones</h3>
+                <h3 className="font-Momo text-xl lg:text-2xl">Cursos y Certificaciones</h3>
               </div>
               <div className="w-full h-100 p-2 flex overflow-y-auto no-scrollbar">
                 <div className="w-full h-full flex flex-col gap-2">
                   {ListEducation.others.map(item=>(
-                    <div key={item.school} className="w-full h-26 p-2 shrink-0 grid grid-cols-10 grid-rows-2 gap-8">
+                    <div key={item.school} className="w-full h-26 p-2 shrink-0 grid grid-cols-10 grid-rows-2 gap-4">
                       {item.end === 'N' ? 
                       <div 
                       className="
@@ -61,25 +64,27 @@ export const Education = () => {
                       border-[#81FB1D]
                       h-14
                       w-14
+                      md:h-22
+                      md:w-22
                       "
                       >
-                        <span className="font-Momo text-[#81FB1D] text-[12px]">{item.porcent}</span>
+                        <span className="font-Momo text-[#81FB1D] text-[12px] md:text-[18px]">{item.porcent}</span>
                       </div>
                       :
                       <div 
-                      className="col-span-2 row-span-3 bg-center bg-cover rounded-2xl flex h-14 w-14"
+                      className="col-span-2 row-span-3 bg-center bg-cover rounded-2xl flex h-14 w-14 md:w-22 md:h-22"
                       style={{ backgroundImage: `url(${courseIcon})`}}></div>
                       }
                       <div className="col-span-5 row-span-3 col-start-3 flex flex-col">
-                        <p className="font-League  text-xl text-[#F4E8C5] text-[18px]">{item.school}</p>
-                        <p className="font-Darker text-[14px]">{item.description}</p>
-                        <p className="font-Momo text-[#F4E8C5] text-[12px]">{item.time}</p>
+                        <p className="font-League  text-xl text-[#F4E8C5] text-[18px] md:text-[22px]">{item.school}</p>
+                        <p className="font-Darker text-[14px] md:text-[16px]">{item.description}</p>
+                        <p className="font-Momo text-[#F4E8C5] text-[12px] md:text-[14px]">{item.time}</p>
                       </div>
                       <div className="col-span-3 col-start-8 row-start-2">
                         {item.end === 'N' ? 
                         <></>
                         :
-                        <button className="text-[#F0FB1D] text-sm w-24 h-8 border border-[#F0FB1D] rounded-xl cursor-pointer text-[10px]" onClick={() => window.open(item.url, "_blank")}>
+                        <button className="text-[#F0FB1D] text-sm w-24 h-8 border border-[#F0FB1D] rounded-xl cursor-pointer text-[10px] md:text-[12px] md:w-30" onClick={() => window.open(item.url, "_blank")}>
                           Ver Certificado
                         </button>
                         }
@@ -90,13 +95,13 @@ export const Education = () => {
               </div>
             </div>
             <div className="col-span-5 row-span-3 row-start-8 p-2">
-              <h3 className="font-Momo text-xl">Herramientas de desarrollo, diseño y gestión</h3>
+              <h3 className="font-Momo text-xl lg:text-2xl">Herramientas de desarrollo, diseño y gestión</h3>
               <div className="w-full p-4 flex overflow-x-auto no-scrollbar" ref={scrollRef}>
                 <div className="flex flex-row gap-6 w-max">
                   {stacks.map((item,index)=>(
-                    <div key={`${item.name} - ${index}`} className="w-20 h-20 bg-[#242421] rounded-2xl flex flex-col justify-center items-center">
-                      <img className="w-8 h-8" src={`${item.icon}`}/>
-                      <span className="font-Darker text-[14px]">{item.label}</span>
+                    <div key={`${item.name} - ${index}`} className="w-20 h-20 bg-[#242421] rounded-2xl flex flex-col justify-center items-center md:w-26 md:h-26">
+                      <img className="w-8 h-8 md:w-10 md:h-10" src={`${item.icon}`}/>
+                      <span className="font-Darker text-[14px] md:text-[18px]">{item.label}</span>
                     </div>
                   ))}
                 </div>
