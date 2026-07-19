@@ -76,7 +76,7 @@ const downloadPDF = () => {
             font-League text-2xl mb-6 text-[#F4E8C5]
             ">Contacto & Redes Sociales</h2>
 
-						<div className="flex gap-12">
+						<div className="flex gap-8">
 							{IconsButtons.map(item=>(
                 <div className="relative group transition-transform">
                   <a 
@@ -85,7 +85,7 @@ const downloadPDF = () => {
                     item.name !== 'Curriculum' ? () => window.open(item.url, "_blank") : downloadPDF
                   }
                   >
-                    <item.icon className="w-8 h-8 text-amber-50 cursor-pointer hover:scale-140 transition-transform" />
+                    <item.icon className="w-6 h-6 text-amber-50 cursor-pointer hover:scale-140 transition-transform" />
                   </a>
                 <span
                   className="
