@@ -40,7 +40,7 @@ const downloadPDF = () => {
 
         {/* =================== COLUMNA CENTRO =================== */}
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col md:flex-row gap-6">
           {/* Habilidades */}
 
           <div className="
@@ -76,7 +76,7 @@ const downloadPDF = () => {
             font-League text-2xl mb-6 text-[#F4E8C5]
             ">Contacto & Redes Sociales</h2>
 
-						<div className="flex gap-8">
+						<div className="flex gap-8 md:flex-wrap">
 							{IconsButtons.map(item=>(
                 <div className="relative group transition-transform">
                   <a 
@@ -85,7 +85,7 @@ const downloadPDF = () => {
                     item.name !== 'Curriculum' ? () => window.open(item.url, "_blank") : downloadPDF
                   }
                   >
-                    <item.icon className="w-6 h-6 text-amber-50 cursor-pointer hover:scale-140 transition-transform" />
+                    <item.icon className="w-6 h-6 md:w-10 md:h-10 text-amber-50 cursor-pointer hover:scale-140 transition-transform" />
                   </a>
                 <span
                   className="
