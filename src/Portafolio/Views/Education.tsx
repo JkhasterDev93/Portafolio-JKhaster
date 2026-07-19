@@ -59,14 +59,15 @@ export const Education = () => {
                       items-center justify-center
                       border-2 border-dashed 
                       border-[#81FB1D]
-                      h-18
+                      h-14
+                      w-14
                       "
                       >
                         <span className="font-Momo text-[#81FB1D] text-[12px]">{item.porcent}</span>
                       </div>
                       :
                       <div 
-                      className="col-span-2 row-span-3 bg-center bg-cover rounded-2xl flex h-18"
+                      className="col-span-2 row-span-3 bg-center bg-cover rounded-2xl flex h-14 w-14"
                       style={{ backgroundImage: `url(${courseIcon})`}}></div>
                       }
                       <div className="col-span-5 row-span-3 col-start-3 flex flex-col">
