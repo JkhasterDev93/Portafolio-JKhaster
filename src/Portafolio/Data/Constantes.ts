@@ -84,12 +84,12 @@ export const ListStacks:listStack[] = [
 ]
 
 export const gridBoxExperience: gridBoxExp[] = [
-    {id: 1, showImage: 'S', src: box01, class: 'col-span-8 row-span-5 justify-between shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Desarrollador Front End Jr.', company: 'CodexTec 2026'},
-    {id: 2, showImage: 'S', src: box02, class: 'col-span-4 row-span-6 col-start-9 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'QA Tester', company: 'Códice Global 2024'},
-    {id: 3, showImage: 'S', src: box03, class: 'col-span-3 row-span-5 row-start-6 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Tester Funcional', company: 'MTI Consultoría 2024'},
-    {id: 4, showImage: 'N', src:'', class: 'col-span-5 row-span-2 col-start-4 row-start-6 justify-end bg-[#578014]',bg: 'Diseñador de Flayers', company: 'Freelance 2026'},
-    {id: 5, showImage: 'N', src:'', class: 'col-span-5 row-span-3 col-start-4 row-start-8 justify-end bg-[#578014]',bg: 'Programador Front End', company: 'Universidad Autónoma de Querétaro'},
-    {id: 6, showImage: 'S', src: box04, class: 'col-span-4 row-span-4 col-start-9 row-start-7 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Artista Visual en Videojuego', company: 'Universidad Autónoma de Querétaro'},
+    {id: 1, showImage: 'S', src: box01, class: 'md:col-span-8 md:row-span-5 justify-between shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Desarrollador Front End Jr.', company: 'CodexTec 2026'},
+    {id: 2, showImage: 'S', src: box02, class: 'md:col-span-4 md:row-span-6 md:col-start-9 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'QA Tester', company: 'Códice Global 2024'},
+    {id: 3, showImage: 'S', src: box03, class: 'md:col-span-3 md:row-span-5 md:row-start-6 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Tester Funcional', company: 'MTI Consultoría 2024'},
+    {id: 4, showImage: 'N', src:'', class: 'md:col-span-5 md:row-span-2 md:col-start-4 md:row-start-6 justify-end bg-[#578014]',bg: 'Diseñador de Flayers', company: 'Freelance 2026'},
+    {id: 5, showImage: 'N', src:'', class: 'md:col-span-5 md:row-span-3 md:col-start-4 md:row-start-8 justify-end bg-[#578014]',bg: 'Programador Front End', company: 'Universidad Autónoma de Querétaro'},
+    {id: 6, showImage: 'S', src: box04, class: 'md:col-span-4 md:row-span-4 md:col-start-9 md:row-start-7 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Artista Visual en Videojuego', company: 'Universidad Autónoma de Querétaro'},
 ]
 
 
