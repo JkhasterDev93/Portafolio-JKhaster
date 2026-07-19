@@ -17,24 +17,21 @@ const downloadPDF = () => {
 
 
   return (
-    <section className="min-h-screen text-[#EAE7DF] px-18 py-12 bg-amber-300">
+    <section className="min-h-screen text-[#EAE7DF] px-8 py-12">
       {/* Título */}
       <h1 className="
-      font-Momo 
-      text-4xl 
-      mb-8
-      
+      font-Momo text-4xl mb-8
       ">Sobre Mí</h1>
 
       {/* Contenido */}
       <div className="
-      grid 
-      gap-10
-      md:grid-cols-[1fr_1.1fr_0.8fr] ">
+      grid gap-10 grid-cols-1
+      lg:grid-cols-[1fr_1.1fr_0.8fr] ">
         {/* =================== COLUMNA IZQUIERDA =================== */}
 
         <div className="flex flex-col justify-between">
-          <div className="flex flex-col gap-10 font-Darker text-lg leading-8 text-[#B9B9B9] text-[18px]">
+          <div className="
+          flex flex-col gap-4 font-Darker text-lg leading-7 text-[#B9B9B9] text-[16px]">
             {AboutMeText.map(item=>(
               <p key={item.name}>{item.text}</p>
             ))}
@@ -46,10 +43,15 @@ const downloadPDF = () => {
         <div className="flex flex-col gap-6">
           {/* Habilidades */}
 
-          <div className="bg-[#2A2926] rounded-3xl p-7 text-[#F4E8C5]">
-            <h2 className="font-League text-4xl mb-5">Habilidades Blandas</h2>
-
-            <ul className="list-disc pl-5 space-y-2 font-Darker text-[#B9B9B9] text-[18px]">
+          <div className="
+          bg-[#2A2926] rounded-2xl p-5 text-[#F4E8C5]
+          ">
+            <h2 className="
+            font-League text-2xl mb-2
+            ">
+              Habilidades Blandas
+            </h2>
+            <ul className="list-disc pl-5 space-y-2 font-Darker text-[#B9B9B9] text-[16px]">
               {ListSoftSkills.map(item=>(
                 <li key={item.name}>{item.text}</li>
               ))}
@@ -58,10 +60,9 @@ const downloadPDF = () => {
 
           {/* Idiomas */}
 
-          <div className="bg-[#2A2926] rounded-3xl p-7 text-[#F4E8C5]">
-            <h2 className="font-League text-4xl mb-5">Idiomas</h2>
-
-            <ul className="list-disc pl-5 space-y-2 font-Darker text-[#B9B9B9] text-[18px]">
+          <div className="bg-[#2A2926] rounded-2xl p-5 text-[#F4E8C5]">
+            <h2 className="font-League text-2xl mb-2">Idiomas</h2>
+            <ul className="list-disc pl-5 space-y-2 font-Darker text-[#B9B9B9] text-[16px]">
               {ListLanguage.map(item=>(
                 <li key={item.name}>{item.text}</li>
               ))}
@@ -71,9 +72,11 @@ const downloadPDF = () => {
           {/* Contacto */}
 
           <div>
-            <h2 className="font-League text-4xl mb-6 text-[#F4E8C5]">Contacto & Redes Sociales</h2>
+            <h2 className="
+            font-League text-2xl mb-6 text-[#F4E8C5]
+            ">Contacto & Redes Sociales</h2>
 
-						<div className="flex gap-10">
+						<div className="flex gap-12">
 							{IconsButtons.map(item=>(
                 <div className="relative group transition-transform">
                   <a 
@@ -82,7 +85,7 @@ const downloadPDF = () => {
                     item.name !== 'Curriculum' ? () => window.open(item.url, "_blank") : downloadPDF
                   }
                   >
-                    <item.icon className="w-6 h-6 text-amber-50 cursor-pointer hover:scale-140 transition-transform" />
+                    <item.icon className="w-8 h-8 text-amber-50 cursor-pointer hover:scale-140 transition-transform" />
                   </a>
                 <span
                   className="
