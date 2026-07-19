@@ -12,9 +12,7 @@ const Home = () => {
     flex-col
     items-center
     justify-end
-    pb-24
-
-    bg-amber-200'
+    pb-24'
     style={{ backgroundImage: `url(${bannerHome})` }}
     >
         <h5 className="font-BBH text-white text-sm">
