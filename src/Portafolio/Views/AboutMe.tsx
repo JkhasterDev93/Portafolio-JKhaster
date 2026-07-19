@@ -17,12 +17,20 @@ const downloadPDF = () => {
 
 
   return (
-    <section className="min-h-screen text-[#EAE7DF] px-18 py-12">
+    <section className="min-h-screen text-[#EAE7DF] px-18 py-12 bg-amber-300">
       {/* Título */}
-      <h1 className="font-Momo text-6xl mb-12">Sobre Mí</h1>
+      <h1 className="
+      font-Momo 
+      text-4xl 
+      mb-8
+      
+      ">Sobre Mí</h1>
 
       {/* Contenido */}
-      <div className="grid grid-cols-[1fr_1.1fr_0.8fr] gap-10">
+      <div className="
+      grid 
+      gap-10
+      md:grid-cols-[1fr_1.1fr_0.8fr] ">
         {/* =================== COLUMNA IZQUIERDA =================== */}
 
         <div className="flex flex-col justify-between">
