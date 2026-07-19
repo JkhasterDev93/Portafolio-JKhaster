@@ -50,7 +50,7 @@ export const Education = () => {
               <div className="w-full h-100 p-2 flex overflow-y-auto no-scrollbar">
                 <div className="w-full h-full flex flex-col gap-2">
                   {ListEducation.others.map(item=>(
-                    <div key={item.school} className="w-full h-26 p-2 shrink-0 grid grid-cols-10 grid-rows-2 gap-4">
+                    <div key={item.school} className="w-full h-26 p-2 shrink-0 grid grid-cols-10 grid-rows-2 gap-8">
                       {item.end === 'N' ? 
                       <div 
                       className="
