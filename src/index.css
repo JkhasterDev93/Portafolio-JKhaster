@@ -13,14 +13,9 @@
     --font-League: "League Gothic", sans-serif;
 }
 
-@layer base {
-    /* .title-primary {
-        @apply 
-    } */
-}
-
 body{
     background-color: #111111;
+    margin: 0;
 }
 
 @layer utilities {

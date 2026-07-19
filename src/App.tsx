@@ -5,13 +5,19 @@ import Home from "./Portafolio/Views/Home"
 
 const App = () => {
   return (
-    <div>
+    <main className="w-screen h-screen">
     {<Home/>}
-    {<AboutMe/>}
-    {<Education />}
-    {<Experience />}
-    </div>      
+
+    </main>      
   )
 }
 
 export default App
+
+
+/*
+    {<AboutMe/>}
+    {<Education />}
+    {<Experience />}
+
+*/
