@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { expDetalleModal } from "../Data/Constantes";
-import type { ExpDetail } from "../Interfaces/Interface";
+import type { Render } from "../Interfaces/Interface";
 
 interface Props {
   onOpen: boolean;
@@ -13,36 +13,33 @@ export const ModalForm = ({
   onClose,
   idRefer,
 }: Props) => {
-  const [data, setData] = useState<ExpDetail>();
+  const data = useMemo(()=>{
+    return expDetalleModal.find(item => item.id === idRefer);
+  },[idRefer]);
 
-  useEffect(() => {
-    if (!onOpen) return;
+  const [images, setImages] = useState<Render[]>([]);
 
-    const response = expDetalleModal.find((item) => item.id === idRefer);
-
-    setData(response);
-  }, [idRefer, onOpen]);
 
   const swapImages = (index: number) => {
-    setData((prev) => {
-      if (!prev) return prev;
+      setImages(prev => {
+          const newImages = [...prev];
 
-      const newRender = [...prev.render];
+          const selected = index + 1;
 
-      // +1 porque las miniaturas vienen de render.slice(1)
-      const selected = index + 1;
+          [newImages[0], newImages[selected]] = [
+              newImages[selected],
+              newImages[0],
+          ];
 
-      [newRender[0], newRender[selected]] = [
-        newRender[selected],
-        newRender[0],
-      ];
-
-      return {
-        ...prev,
-        render: newRender,
-      };
-    });
+          return newImages;
+      });
   };
+
+  useEffect(() => {
+      if (!data) return;
+
+      setImages([...data.render]);
+  }, [data]);
 
   if (!onOpen || !data) return null;
 
@@ -78,8 +75,8 @@ export const ModalForm = ({
           
           <div className="col-span-3 row-span-6 col-start-1 row-start-1 rounded-3xl overflow-hidden">
             <img
-              src={data.render[0].src}
-              alt={data.render[0].id}
+              src={images[0].src}
+              alt={images[0].id}
               className="w-full h-100  md:w-full md:h-full object-cover md:object-center sm:rounded-2xl"
             />
           </div>
@@ -87,7 +84,7 @@ export const ModalForm = ({
           <div className="col-span-5 row-span-2 col-start-4 row-start-5 flex flex-col gap-4">
             <span className="text-[#A4A497] font-Darker font-bold text-[14px] md:text-xl">Galería de imagenes...</span>
             <div className="flex gap-4 items-center">
-                {data.render.slice(1).map((img, index) => (
+                {images.slice(1).map((img, index) => (
                 <div
                     key={img.id}
                     onClick={() => swapImages(index)}
