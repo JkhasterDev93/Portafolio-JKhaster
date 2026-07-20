@@ -56,31 +56,31 @@ export const ModalForm = ({
           ✕
         </button>
 
-        <div className="flex flex-col md:grid md:grid-cols-8 md:grid-rows-6 md:h-[80vh] md:w-full">
-
+        <div className="flex flex-col md:grid md:grid-cols-8 md:grid-rows-6 md:h-full md:w-full gap-4">
+          
           <div className="col-span-5 row-span-4 col-start-4 text-white overflow-y-auto no-scrollbar">
-            <h2 className="text-2xl md:text-4xl font-Momo mb-6 mt-10">
+            <h2 className="text-2xl md:text-4xl font-Momo mb-6 mt-10 md:mt-1">
               {data.title}
             </h2>
 
             {data.pagraph.map((item, index) => (
               <div key={index} className="mb-5">
                 {item.subtitle && (
-                  <h3 className="text-xl mb:text-3xl font-League mb-2">
+                  <h3 className="text-xl md:text-3xl font-League mb-2">
                     {item.subtitle}
                   </h3>
                 )}
 
-                <p className="font-Darker text-[15px] mb:text-xl">{item.text}</p>
+                <p className="font-Darker text-[15px] md:text-xl">{item.text}</p>
               </div>
             ))}
           </div>
-
-          <div className="col-span-3 row-span-6 rounded-3xl overflow-y-auto no-scrollbar">
+          
+          <div className="col-span-3 row-span-6 col-start-1 row-start-1 rounded-3xl overflow-hidden">
             <img
               src={data.render[0].src}
               alt={data.render[0].id}
-              className="w-full h-60  md:w-full md:h-full object-cover"
+              className="w-full h-100  md:w-full md:h-full object-cover md:object-center sm:rounded-2xl"
             />
           </div>
 
