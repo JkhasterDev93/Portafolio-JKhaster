@@ -12,7 +12,7 @@ const Experience = () => {
   return (
     <>
     {<section className='h-100 md:min-h-screen text-[#EAE7DF] px-8 mb:py-12 mb-12 overflow-y-auto no-scrollbar'>
-      <div className="flex flex-col md:grid md:grid-cols-12 md:grid-rows-10 gap-4 h-screen">
+      <div className="flex flex-col md:grid md:grid-cols-12 md:grid-rows-10 gap-4 h-full lg:h-screen">
         {gridBoxExperience.map(item=>(
           <div className={`group flex flex-col ${item.class} rounded-3xl p-3 md:p-4 bg-center bg-cover`} style={{backgroundImage:`url(${item.showImage === 'S' ? item.src : ''})`}}>
             {item.id === 1 ? <h1 className="font-Momo text-4xl md:text-6xl mb-12">Experiencia</h1> : <></>}
