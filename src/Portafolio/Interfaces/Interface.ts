@@ -49,11 +49,14 @@ export interface ExpDetail {
     title: string;
     pagraph: Paragraph[];
     render: Render[];
+    stack?: string[];
 }
 
 export interface Paragraph {
-    subtitle: string | null;
-    text: string;
+    title?: string | null;
+    subtitle?: string | null;
+    text?: string;
+    list?: string[];
 }
 
 export interface Render {

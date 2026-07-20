@@ -25,7 +25,7 @@ const Experience = () => {
               w-10 h-10
               md:w-16 md:h-16
               p-2 
-              bg-[#D1E395] 
+              bg-[#D1E395]/20 
               rounded-full 
               flex 
               justify-center 

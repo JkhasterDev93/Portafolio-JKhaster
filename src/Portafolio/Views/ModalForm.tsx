@@ -66,13 +66,34 @@ export const ModalForm = ({
             <h2 className="text-2xl md:text-4xl font-Momo mb-6 mt-10 md:mt-1">
               {data.title}
             </h2>
+            <div className="flex flex-row w-full gap-2 mb-4">
+              {data?.stack?.map((item,index) => (
+                <div key={index} className="flex justify-center items-center w-20 h-8 md:w-28 md:h-10 rounded-[18px] border border-[#90B800]">
+                  <span className="text-[#90B800] text-[12px] md:text-[16px]">{item}</span>
+                </div>
+              ))}
+            </div>
+
 
             {data.pagraph.map((item, index) => (
               <div key={index} className="mb-5">
-                {item.subtitle && (
+                {item.title && (
                   <h3 className="text-xl md:text-3xl font-League mb-2">
-                    {item.subtitle}
+                    {item.title}
                   </h3>
+                )}
+
+                {item.subtitle &&(
+                  <span className="text-[14px] md:text-[18px] font-semibold">{item.subtitle}</span>
+                )}
+
+
+                {item.list &&(
+                  <ul className="list-disc pl-5 space-y-2 font-Darker text-[#B9B9B9] text-[16px] lg:text-xl">
+                    {item.list.map((item, index)=>(
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
                 )}
 
                 <p className="font-Darker text-[15px] md:text-xl">

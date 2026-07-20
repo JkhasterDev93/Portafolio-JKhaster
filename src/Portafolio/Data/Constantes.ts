@@ -84,40 +84,41 @@ export const ListStacks:listStack[] = [
 ]
 
 export const gridBoxExperience: gridBoxExp[] = [
-    {id: 1, showImage: 'S', src: box01, class: 'md:col-span-8 md:row-span-5 justify-between shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Desarrollador Front End Jr.', company: 'CodexTec 2026'},
-    {id: 2, showImage: 'S', src: box02, class: 'md:col-span-4 md:row-span-6 md:col-start-9 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'QA Tester', company: 'Códice Global 2024'},
-    {id: 3, showImage: 'S', src: box03, class: 'md:col-span-3 md:row-span-5 md:row-start-6 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Tester Funcional', company: 'MTI Consultoría 2024'},
-    {id: 4, showImage: 'N', src:'', class: 'md:col-span-5 md:row-span-2 md:col-start-4 md:row-start-6 justify-end bg-[#578014]',bg: 'Diseñador de Flayers', company: 'Freelance 2026'},
-    {id: 5, showImage: 'N', src:'', class: 'md:col-span-5 md:row-span-3 md:col-start-4 md:row-start-8 justify-end bg-[#578014]',bg: 'Programador Front End', company: 'Universidad Autónoma de Querétaro'},
-    {id: 6, showImage: 'S', src: box04, class: 'md:col-span-4 md:row-span-4 md:col-start-9 md:row-start-7 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Artista Visual en Videojuego', company: 'Universidad Autónoma de Querétaro'},
+    {id: 1, showImage: 'S', src: box01, class: 'md:col-span-8 md:row-span-5 justify-between shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Desarrollador Front End Jr.', company: 'CodexTec - 2026'},
+    {id: 2, showImage: 'S', src: box02, class: 'md:col-span-4 md:row-span-6 md:col-start-9 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'QA Tester', company: 'Códice Global - 2024'},
+    {id: 3, showImage: 'S', src: box03, class: 'md:col-span-3 md:row-span-5 md:row-start-6 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Tester Funcional', company: 'MTI Consultoría - 2024'},
+    {id: 4, showImage: 'N', src:'', class: 'md:col-span-5 md:row-span-2 md:col-start-4 md:row-start-6 justify-end bg-[#578014]',bg: 'Campaña de Marketing para Torneo', company: 'Redes Sociales - Freelance - 2026'},
+    {id: 5, showImage: 'N', src:'', class: 'md:col-span-5 md:row-span-3 md:col-start-4 md:row-start-8 justify-end bg-[#578014]',bg: 'Cobridge Transductor (java to c++)', company: 'Universidad Autónoma de Querétaro - Programador Front End - 2023'},
+    {id: 6, showImage: 'S', src: box04, class: 'md:col-span-4 md:row-span-4 md:col-start-9 md:row-start-7 justify-end shadow-[inset_0px_-50px_59px_-3px_rgba(29,29,27,0.8)]',bg: 'Titulación x Brinco', company: 'Universidad Autónoma de Querétaro - Concept Artist - 2023'},
 ]
 
 
 export const expDetalleModal:ExpDetail[] = [
     {
         id: 1, 
-        title: 'Freelancer Diseñador de Flayers',
+        title: 'Programador Front End Jr. CodexTec',
+        stack:['React', 'TypeScript', 'Postman', 'Tailwind', 'Git', 'Next', 'Scrum'],
         pagraph: [
             {
-                subtitle: null,
-                text: `Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry. Lorem Ipsum 
-                has been the industry's standard dummy text ever 
-                since 1966, when designers at Letraset and James 
-                Mosley, the librarian at St Bride Printing Library 
-                in London, took a 1914 Cicero translation and 
-                scrambled it to make dummy text for Letraset's Body 
-                Type sheets.`
+                text: `Actualmente estoy colaborando en el proyecto
+                del Nuevo Recaudanet de Gobierno del Estado de Querétaro. En el área de
+                desarrollo, realizo diversas actividades y una de las principales 
+                siendo la implementación de funciones, que permitan al usuario final
+                o cliente utilizarlas. Siempre con visión de ser productos
+                de calidad y siguiendo normas de experiencia de usuario.`
             },
             {
-                subtitle: 'Proceso Creativo',
-                text: `It is a long established fact that a reader 
-                will be distracted by the readable content of a page 
-                when looking at its layout. The point of using Lorem 
-                Ipsum is that it has a more-or-less normal distribution 
-                of letters, as opposed to using 'Content here, content here', 
-                making it look like readable English.`,
-            }
+                subtitle: 'Actividades :',
+                list:['Desarrollo de nuevas funcionalidades', 'Corrección de Bugs', 'Consumo de APIs', 'Construcción de Interfaces', 'Construcción de componentes'],
+            },
+            {
+                text: `Mi integración al equipo de desarrollo Front End
+                ha traido consigo logros que han aportado a mejorar cada día
+                la implementación o mantenimiento de interfaces:`
+            },
+            {
+                list:['Optimización en consumo de servicios', 'Implementación de componentes genéricos', 'Participación en revisiones de código', 'Participación activa con la cédula del equipo'],
+            },
         ],
         render: [
             {
@@ -140,28 +141,26 @@ export const expDetalleModal:ExpDetail[] = [
     },
     {
         id: 2, 
-        title: 'Freelancer Diseñador de Flayers',
+        title: 'Q.A. Tester Códice Global',
+        stack:['Postman', 'Selenium', 'Python', 'Excel', 'Word', 'Notion'],
         pagraph: [
             {
-                subtitle: null,
-                text: `Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry. Lorem Ipsum 
-                has been the industry's standard dummy text ever 
-                since 1966, when designers at Letraset and James 
-                Mosley, the librarian at St Bride Printing Library 
-                in London, took a 1914 Cicero translation and 
-                scrambled it to make dummy text for Letraset's Body 
-                Type sheets.`
+                text: `Participe en el proyecto Nuevo Recaudanet de Gobierno del 
+                Estado de Querétaro. En el área del Aseguramiento de la Calidad y una 
+                de las principales actividades fue la implementación de pruebas unitarias 
+                e integrales, realizando la revisión de una especificación técnica y requisitos.`
             },
             {
-                subtitle: 'Proceso Creativo',
-                text: `It is a long established fact that a reader 
-                will be distracted by the readable content of a page 
-                when looking at its layout. The point of using Lorem 
-                Ipsum is that it has a more-or-less normal distribution 
-                of letters, as opposed to using 'Content here, content here', 
-                making it look like readable English.`,
-            }
+                subtitle: 'Actividades :',
+                list:['Pruebas Unitarias', 'Pruebas Integrales', 'Pruebas Automatizadas', 'Pruebas de Vida', 'Documentación de Incidencias', 'Análisis en Reportes de Requerimientos', 'Pruebas de Rendimiento'],
+            },
+            {
+                text: `Mi integración al equipo de Q.A. ha traido consigo la
+                implementación de herramientas y ciertos logros para el equipo:`
+            },
+            {
+                list:['Implementación de pruebas automatizadas con Selenium', 'Implementación de formato para seguimiento de incidencias', 'Seguimiento de cambios en Fichas Técnicas', 'Participación en la revisión de nuevas funcionalidades'],
+            },
         ],
         render: [
             {
@@ -184,28 +183,26 @@ export const expDetalleModal:ExpDetail[] = [
     },
     {
         id: 3, 
-        title: 'Freelancer Diseñador de Flayers',
+        title: 'Tester Funcional MTI Consultoría',
+        stack:['Word', 'Excel', 'PLSql', 'Git', 'Notion'],
         pagraph: [
             {
-                subtitle: null,
-                text: `Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry. Lorem Ipsum 
-                has been the industry's standard dummy text ever 
-                since 1966, when designers at Letraset and James 
-                Mosley, the librarian at St Bride Printing Library 
-                in London, took a 1914 Cicero translation and 
-                scrambled it to make dummy text for Letraset's Body 
-                Type sheets.`
+                text: `Participe con el equipo de consultoria de MTI, para realizar
+                revisiones, sobre el producto REGER GRP para uno de sus clientes con
+                el fin de garantizar que el módulo para un sistema de ingresos, se adapte
+                a las necesidades del cliente entregando un producto de calidad.`
             },
             {
-                subtitle: 'Proceso Creativo',
-                text: `It is a long established fact that a reader 
-                will be distracted by the readable content of a page 
-                when looking at its layout. The point of using Lorem 
-                Ipsum is that it has a more-or-less normal distribution 
-                of letters, as opposed to using 'Content here, content here', 
-                making it look like readable English.`,
-            }
+                subtitle: 'Actividades :',
+                list:['Pruebas Unitarias', 'Pruebas Integrales', 'Pruebas de Vida', 'Documentación de Incidencias'],
+            },
+            {
+                text: `Mi integración al equipo de Q.A. ha traido consigo la
+                implementación de herramientas y ciertos logros para el equipo:`
+            },
+            {
+                list:['Implementación de formato para seguimiento de incidencias', 'Participación en la revisión de nuevas funcionalidades'],
+            },
         ],
         render: [
             {
@@ -228,28 +225,26 @@ export const expDetalleModal:ExpDetail[] = [
     },
     {
         id: 4, 
-        title: 'Freelancer Diseñador de Flayers',
+        title: 'Campaña de Marketing Torneo de Valorant',
+        stack:['Photoshop', 'Pinterest', 'Google Drive', 'Discord', 'Instagram'],
         pagraph: [
             {
-                subtitle: null,
-                text: `Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry. Lorem Ipsum 
-                has been the industry's standard dummy text ever 
-                since 1966, when designers at Letraset and James 
-                Mosley, the librarian at St Bride Printing Library 
-                in London, took a 1914 Cicero translation and 
-                scrambled it to make dummy text for Letraset's Body 
-                Type sheets.`
+                text: `Participe en la planeación y diseño de la identidad visual
+                para una campaña de marketing enfocada a un torneo del vídeojuego
+                de Valorant. Durante un periódo de tiempo me enfoque en diseñar 
+                materiales promocionales para redes sociales manteniendo la temática
+                del evento y buscando captar la atención de la comunidad. Además, se
+                realizaron las siguientes responsabilidades:`
             },
             {
-                subtitle: 'Proceso Creativo',
-                text: `It is a long established fact that a reader 
-                will be distracted by the readable content of a page 
-                when looking at its layout. The point of using Lorem 
-                Ipsum is that it has a more-or-less normal distribution 
-                of letters, as opposed to using 'Content here, content here', 
-                making it look like readable English.`,
-            }
+                list:['Diseño de identidad visual', 'Creación de publicaciones para redes sociales', 'Adaptación de materiales en diferentes formatos', 'Constantes reuniones para feedback y cambios', 'Programación de publicaciones en base a la afluencia de usuarios'],
+            },
+            {
+                text: `Los resultados conseguidos de la campaña de marketing:`
+            },
+            {
+                list:['Incremento de usuarios del servidor de torneos', 'Mayor interacción en redes sociales', 'Material reutilizable antes, durante y terminado el evento', 'Incremento de seguidores en las redes sociales de la comunidad'],
+            },
         ],
         render: [
             {
@@ -272,28 +267,40 @@ export const expDetalleModal:ExpDetail[] = [
     },
     {
         id: 5, 
-        title: 'Freelancer Diseñador de Flayers',
+        title: 'Programador Front End Cobridge Transductor',
+        stack:['Figma', 'Photoshop', 'Python', 'Tkinter', 'Pixelorama'],
         pagraph: [
             {
-                subtitle: null,
-                text: `Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry. Lorem Ipsum 
-                has been the industry's standard dummy text ever 
-                since 1966, when designers at Letraset and James 
-                Mosley, the librarian at St Bride Printing Library 
-                in London, took a 1914 Cicero translation and 
-                scrambled it to make dummy text for Letraset's Body 
-                Type sheets.`
+                title: 'Cobridge Transductor',
+                text: `Es un transductor el cual, su principal objetivo es interpretar
+                el código escrito con sintaxis de Java, utilizando DataSet y así
+                transcribirlo a sintaxis de C++ y así de forma inversa. 
+                Esto con la necesidad de tener una herramienta que pudiera 
+                facilitar el trabajo de interpretar código de una sintaxis a otra.
+                Además, con la creciente incertidumbre de utilizar IA y está
+                pueda vulnerar el sistema al utilizar el código fuente.`
             },
             {
-                subtitle: 'Proceso Creativo',
-                text: `It is a long established fact that a reader 
-                will be distracted by the readable content of a page 
-                when looking at its layout. The point of using Lorem 
-                Ipsum is that it has a more-or-less normal distribution 
-                of letters, as opposed to using 'Content here, content here', 
-                making it look like readable English.`,
-            }
+                subtitle:'Mi participación en Cobridge',
+                text: `Participé en la planeación, diseño e implementación de la 
+                identidad visual del programa Cobridge Transductor, con el objetivo 
+                de crear una interfaz intuitiva, funcional y visualmente atractiva 
+                que facilitara el uso de sus diferentes funcionalidades. Asimismo, 
+                desarrollé la identidad gráfica para el evento universitario 
+                "Proyecta-T", diseñando materiales visuales que reforzaran la imagen 
+                y comunicación del evento. Los estilos y herramientas utilizados trataban de 
+                conseguir los siguientes objetivos:`,
+            },
+            {
+                
+                list:['Conseguir una identidad visual única', 'Entregar una buena experiencia de usuario', 'Mostrar las habilidades de diseño visual implementadas', 'Destacar sobre los demás proyectos del evento'],
+            },
+            {
+                text: `Los resultados conseguidos:`
+            },
+            {
+                list:['Obtener el primer lugar en la premeación del evento', 'Conseguir el interés de los alumnos y directivos sobre el producto', 'La posibilidad de utilizar el proyecto como método de titulación'],
+            },
         ],
         render: [
             {
@@ -316,28 +323,32 @@ export const expDetalleModal:ExpDetail[] = [
     },
     {
         id: 6, 
-        title: 'Freelancer Diseñador de Flayers',
+        title: 'Concept Artist en vídeojuego 2D Titulación x Brinco',
+        stack:['Pixelorama', 'Photoshop', 'Unity 2D', 'C#', 'Filmora', 'Git'],
         pagraph: [
             {
-                subtitle: null,
-                text: `Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry. Lorem Ipsum 
-                has been the industry's standard dummy text ever 
-                since 1966, when designers at Letraset and James 
-                Mosley, the librarian at St Bride Printing Library 
-                in London, took a 1914 Cicero translation and 
-                scrambled it to make dummy text for Letraset's Body 
-                Type sheets.`
+                title: 'Titulación x Brinco',
+                text: `Es videojuego el cual trata de mostrar de forma satírica
+                la odisea de un estudiante de universidad, al tratar de pasar por el proceso
+                de titulación. Miguelón quién es el protagonista de esta aventura
+                se enfrenta a la difícil noticia de saber que su proceso de titulación
+                está por peligrar, entonces decidido, se enfrenta a diferentes obstáculos
+                y deberá saltar por diferentes plataformas y así poder conseguir su título. 
+                Pero, lo que no sabe es que un paso en falso, puede costarle el empezar de nuevo.`
             },
             {
-                subtitle: 'Proceso Creativo',
-                text: `It is a long established fact that a reader 
-                will be distracted by the readable content of a page 
-                when looking at its layout. The point of using Lorem 
-                Ipsum is that it has a more-or-less normal distribution 
-                of letters, as opposed to using 'Content here, content here', 
-                making it look like readable English.`,
-            }
+                subtitle:'Mi participación en Titulación x Brinco',
+                text: `Participé en la planeación y diseño del videojuego con estilo PixelArt,
+                desarrollando recursos gráficos como Sprites, escenarios, elementos de la interfaz 
+                y la elección de las paletas de colores. Además, de apegarme a la temática y concepción 
+                que debía cumplir el videojuego para participar en el evento universitario "Proyecta-T".
+                Se búsco del hacer una experiencia atractiva y divertida para los alumnos de la facultad,
+                con esto se consiguio:`,
+            },
+            {
+                
+                list:['Interés por los alumnos a tal punto de querer conocer todo el proceso', 'Entregar una buena experiencia de usuario', 'Conseguir una buena aceptación por el jurado', 'Destacar sobre los demás proyectos del evento', 'Conseguir un reconocimiento al ser el primer videojuego en presentar una buena propuesta'],
+            },
         ],
         render: [
             {
